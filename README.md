@@ -19,4 +19,7 @@ Once you have all your rooms created add them to the `MapGenerator` component. I
 
 To start the generation you just need to call the `Generate()` or `Generate(int seed)` function from the `MapGenerator` component. 
 
-Script API
+[Script API](https://github.com/quxios/RandomMapGenerator/blob/master/Documentation.md)
+
+# Additional info
+I was too lazy to add in the hallways, to do this they should be separate meshes from the room and a child of the room (1 hallway per spawn point). Then just create a component that checks if it's related spawn point is connected to a room if it isn't hide it.
