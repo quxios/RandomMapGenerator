@@ -46,18 +46,6 @@ namespace RMG {
       spawnedRooms = new List<Room>();
     }
 
-    public IEnumerator Start() {
-      Generate();
-      yield return new WaitForSeconds(1);
-      Generate();
-      yield return new WaitForSeconds(1);
-      Generate();
-      yield return new WaitForSeconds(1);
-      Generate();
-      yield return new WaitForSeconds(1);
-      Generate();
-    }
-
     public void Generate() {
       Generate(System.DateTime.Now.Millisecond);
     }
